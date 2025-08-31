@@ -38,7 +38,6 @@ class TaskService implements TaskServiceInterface
      */
     public function listTasks(array $filters = []): LengthAwarePaginator
     {
-        throw new \Exception('test', 400);
         return $this->repo->listTasks($filters);
     }
 
